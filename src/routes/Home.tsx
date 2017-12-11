@@ -14,7 +14,7 @@ const Home = () => (
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
-          <Link to="/asdf">Other page</Link>
+          <Link to="/info">Other page</Link>
         </p>
       </Jumbotron>
     </div>

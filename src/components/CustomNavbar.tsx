@@ -9,7 +9,7 @@ const CustomNavbar = (props: CustomNavbarProps) => {
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          <Link to="/">React-Bootstrap</Link>
+          <Link to="/">fewaf</Link>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
@@ -18,8 +18,8 @@ const CustomNavbar = (props: CustomNavbarProps) => {
           <LinkContainer to="/" exact>
             <NavItem eventKey={1}>Home</NavItem>
           </LinkContainer>
-          <LinkContainer to="/asdf">
-            <NavItem eventKey={1}>Asdf</NavItem>
+          <LinkContainer to="/info">
+            <NavItem eventKey={1}>Info</NavItem>
           </LinkContainer>
           <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
             <MenuItem eventKey={3.1}>Action</MenuItem>
