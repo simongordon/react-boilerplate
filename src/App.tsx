@@ -1,9 +1,9 @@
 import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Jumbotron } from 'react-bootstrap';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
 import CustomNavbar from './components/CustomNavbar';
+import { Home } from './routes';
 
 class App extends React.Component {
   render() {
@@ -11,27 +11,7 @@ class App extends React.Component {
       <div className="App">
         <BrowserRouter>
           <Switch>
-            <Route
-              path="/"
-              exact
-              render={() => (
-                <div>
-                  <CustomNavbar />
-                  <div className="container">
-                    <Jumbotron>
-                      <div className="App-header">
-                        <h2>Welcome to React</h2>
-                      </div>
-                      <p className="App-intro">
-                        To get started, edit <code>src/App.tsx</code> and save
-                        to reload.
-                        <Link to="/asdf">Other page</Link>
-                      </p>
-                    </Jumbotron>
-                  </div>
-                </div>
-              )}
-            />
+            <Route path="/" exact component={Home} />
             <Route
               path="/asdf"
               exact
