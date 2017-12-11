@@ -11,22 +11,25 @@ const CustomNavbar = (props: CustomNavbarProps) => {
         <Navbar.Brand>
           <Link to="/">React-Bootstrap</Link>
         </Navbar.Brand>
+        <Navbar.Toggle />
       </Navbar.Header>
-      <Nav>
-        <LinkContainer to="/" exact>
-          <NavItem eventKey={1}>Home</NavItem>
-        </LinkContainer>
-        <LinkContainer to="/asdf">
-          <NavItem eventKey={1}>Asdf</NavItem>
-        </LinkContainer>
-        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-          <MenuItem eventKey={3.1}>Action</MenuItem>
-          <MenuItem eventKey={3.2}>Another action</MenuItem>
-          <MenuItem eventKey={3.3}>Something else here</MenuItem>
-          <MenuItem divider />
-          <MenuItem eventKey={3.4}>Separated link</MenuItem>
-        </NavDropdown>
-      </Nav>
+      <Navbar.Collapse>
+        <Nav>
+          <LinkContainer to="/" exact>
+            <NavItem eventKey={1}>Home</NavItem>
+          </LinkContainer>
+          <LinkContainer to="/asdf">
+            <NavItem eventKey={1}>Asdf</NavItem>
+          </LinkContainer>
+          <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+            <MenuItem eventKey={3.1}>Action</MenuItem>
+            <MenuItem eventKey={3.2}>Another action</MenuItem>
+            <MenuItem eventKey={3.3}>Something else here</MenuItem>
+            <MenuItem divider />
+            <MenuItem eventKey={3.4}>Separated link</MenuItem>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 };
