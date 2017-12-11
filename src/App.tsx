@@ -2,7 +2,6 @@ import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Jumbotron } from 'react-bootstrap';
 
-const logo = require('./logo.svg');
 
 class App extends React.Component {
   render() {
@@ -11,7 +10,6 @@ class App extends React.Component {
         <Jumbotron>
 
           <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
             <h2>Welcome to React</h2>
           </div>
           <p className="App-intro">
