@@ -2,7 +2,7 @@ import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import CustomNavbar from '../components/CustomNavbar';
 
-const Home = () => (
+const Info = () => (
   <div>
     <CustomNavbar />
     <div className="container">
@@ -12,4 +12,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default Info;
