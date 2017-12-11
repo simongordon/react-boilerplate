@@ -9,7 +9,7 @@ const CustomNavbar = (props: CustomNavbarProps) => {
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          <Link to="/">fewaf</Link>
+          <Link to="/">react-site</Link>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
